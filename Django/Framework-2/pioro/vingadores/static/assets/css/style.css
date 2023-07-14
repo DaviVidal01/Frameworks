@@ -1,0 +1,36 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: "Lucida Console",Verdana;
+    background-color: white;
+    color: #009D6B;
+}
+#container{
+    background-color: rgb(108, 106, 106);
+    width: 80%;
+    min-height: auto;
+    padding: 20px;
+    margin: 10px auto 10px auto;
+}
+#palavra, #flip, #estilo{
+    margin-top: 15px;
+    padding: 10px;
+    background-color: #a760b5;
+    text-align: center;
+    color: white;
+}
+#conceito, #panel{
+    padding: 15px;
+    background-color: #642970;
+    text-align: justify;
+    color:white;
+    display: none;
+}
+button{
+    width: 140px;
+    padding: 5px;
+    font-family: "Lucida Console", Verdana;
+}

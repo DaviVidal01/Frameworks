@@ -1,0 +1,23 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+div{
+    justify-content: center;
+    padding: 200px;
+    margin:200px;
+    text-align: center;
+    display: flex;
+}
+
+button{
+    width: 200px;
+    height: 200px;
+    background-color: green;
+    color: white;
+}
+
+button:hover{
+    background-color: red;
+}

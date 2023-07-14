@@ -1,0 +1,96 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="{% static 'assets/css/bootstrap.min.css' %}">
+    <script src="{% static 'assets/js/bootstrap.bundle.js' %}"></script>
+    <link rel="shortcut icon" href="{% static 'assets/img/whey.png' %}" type="image/x-icon">
+    <link rel="stylesheet" href="{% static 'assets/css/style.css' %}">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            //apresenta a div panel
+            $("#flip1").click(function(){
+                $("#informacao").slideDown("slow");
+            });
+            //esconde a div panel
+            $("#informacao").click(function(){
+                $("#informacao").slideUp("slow");
+            });
+            //apresenta a div panel
+            $("#flip2").click(function(){
+                $("#contato").slideDown("slow");
+            });
+            //esconde a div panel
+            $("#contato").click(function(){
+                $("#contato").slideUp("slow");
+            });
+        });
+    </script>
+    <title>WheyShop | SOBRE</title>
+  </head>
+  <body>
+    <!--Theader-->
+    <theader>
+      <div class="navbar navbar-expand-lg bg-dark-subtle">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img src="{% static 'assets/img/logo.png' %}" alt="WheyShop" height="40px" width="200px"></a>
+          <form class="d-flex me-5" role="search">
+            <input class="form-control me-2" style="background-color:plum;" type="search" placeholder="Encontre Suplementos" aria-label="Encontre Suplementos">
+            <button class="btn btn-outline-dark" type="submit">Procurar</button>
+          </form>
+        </div>
+      </div>
+     </theader>
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg navbar-default navbar-fixed-top text-bg-dark">
+      <div class="container">
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav nav-pills">
+            <li class="nav-item">
+              <a class="nav-link active text-light pe-4 me-3" style="background-color: purple;" aria-current="page" href="#">INÍCIO</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active text-bg-secondary pe-4 me-3" href="../app">PRODUTOS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active text-bg-secondary pe-4 me-3" href="../app">PROMOÇÕES</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active text-bg-secondary pe-4 me-3" href="../app">PRÉ-TREINO</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active text-bg-secondary pe-4 me-3" href="../app">ROUPAS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active text-bg-secondary pe-4 me-3" href="../app">CONTATO</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active text-bg-secondary pe-4 me-3" href="../sobre/">SOBRE</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!--Main-->
+    <main>
+        <div id="container">
+          <h1>Sobre a WheyShop:</h1>
+          <!--slideshow-->
+          <div id="flip"><h3>Informações</h3></div>
+          <div id="Informacao">
+              <p><strong>Criador: </strong> Davi</p>
+              <p><strong>Data: </strong> 12/07/2023</p>
+              <p><strong>Programas: </strong>Python, HTML, CSS e Javascript (JQuery)</p>
+              <br>
+          </div>
+          <div id="flip"><h3>Contatos</h3></div>
+          <div id="contato">
+          </div>
+      </div>
+    </main>
+  </body>
+</html>

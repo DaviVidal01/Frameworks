@@ -1,0 +1,21 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'assets/css/style.css' %}">
+    <script src="{% static 'assets/js/soma.js' %}"></script>
+    <title>Somadora</title>
+</head>
+<body>
+    <h1>teste</h1>
+
+    <div style="display: flex;">
+        <input type="text" name="soma1" id="soma1">
+        <input type="text" name="soma2" id="soma2">
+        <input type="button" name="btS" value="btS">
+        <p id="resultado">0</p>
+    </div>
+</body>
+</html>
