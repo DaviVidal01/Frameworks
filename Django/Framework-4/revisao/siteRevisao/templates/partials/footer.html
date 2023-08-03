@@ -1,0 +1,25 @@
+{% load static %}
+<footer class="bg-dark-subtle" style="font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; color: #000; text-align: center; font-size: 1.5em;">
+    <!--Logo-->
+    <div style="display: inline-block; width: 100%; padding: 10px;">
+      <img src="{% static 'assets/img/logo.png' %}" alt="WheyShop" height="40px" width="200px">
+    </div>
+    <!--Indicações-->
+    <div style="display: flex; justify-content: center; padding: 10px; box-sizing: border-box; margin: 0; border: 0;">
+      <div style="display: block; flex: 1; padding: 20px; width: 300px;">
+        <p>Formas de Pagamento:</p>
+        <img src="{% static 'assets/img/payment-item.png' %}" alt="Pagamentos">
+      </div>
+      <div style="display: block; flex: 1; padding: 20px; width: 300px;">
+        <a href="" class="text-dark"><p>Política de Privacidade</p></a>
+        <a href="" class="text-dark"><p>Termos de Usuários</p></a>
+      </div>
+      <div style="display: block; flex: 1; padding: 20px; width: 300px;">
+        <p>Imagens em:</p>
+        <a href="https://unsplash.com/pt-br" target="_blank" ><img src="{% static 'assets/img/unsplash.png' %}" alt="Pagamentos" style="width:96px; height: 96px;"></a>
+        &nbsp;&nbsp;
+        <a href="https://www.flaticon.com/br/" target="_blank" ><img src="{% static 'assets/img/flaticon.jpg' %}" alt="Pagamentos" style="width:96px; height: 96px;"></a>
+        &nbsp;&nbsp;
+      </div>
+    </div>
+  </footer>

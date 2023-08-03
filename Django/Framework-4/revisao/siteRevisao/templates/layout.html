@@ -1,0 +1,18 @@
+{% load static %}
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Davi</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="{% static 'assets/css/bootstrap.min.css' %}">
+        <script src="{% static 'assets/js/bootstrap.bundle.js' %}"></script>
+        <link rel="shortcut icon" href="{% static 'assets/img/whey.png' %}" type="image/x-icon">
+	</head>
+	<body class="is-preload">
+
+    {% block content %} 
+    {% endblock %}
+    
+	</body>
+</html>
