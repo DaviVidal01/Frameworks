@@ -121,7 +121,7 @@ USE_TZ = True
 STATIC_ROOT = os.path.join(BASE_DIR,'static')
 STATIC_URL = 'static/'
 STATICFILE_DIRS = [
-    os.path.join(BASE_DIR, 'Medieval/static')
+    os.path.join(BASE_DIR, 'setup/static')
 ]
 
 # Default primary key field type
